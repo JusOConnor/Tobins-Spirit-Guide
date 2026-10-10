@@ -94,5 +94,90 @@
         "evidence": ["Ghost Orbs", "Freezing Temps", "DOTS Projector"],
         "strength": "Has a stronger effect on your sanity.",
         "weakness": "Using Smudge Sticks in a Yurei's room will prevent it from wandering for a long time."
+    },
+    {
+        "name": "Aswang",
+        "evidence": ["Ghost Writing", "Freezing Temps", "DOTS Projector"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Dayan",
+        "evidence": ["EMF Level 5", "Ghost Orbs", "Spirit Box"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Deogen",
+        "evidence": ["DOTS Projector", "Ghost Writing", "Spirit Box"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Gallu",
+        "evidence": ["EMF Level 5", "Fingerprints", "Spirit Box"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Goryo",
+        "evidence": ["EMF Level 5", "Fingerprints", "DOTS Projector"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Kormos",
+        "evidence": ["Spirit Box", "Fingerprints", "Ghost Orbs"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Moroi",
+        "evidence": ["Spirit Box", "Ghost Writing", "Freezing Temps"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Obake",
+        "evidence": ["Fingerprints", "Ghost Orbs", "EMF Level 5"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Obambo",
+        "evidence": ["Ghost Writing", "Fingerprints", "DOTS Projector"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Onryo",
+        "evidence": ["Ghost Orbs", "Freezing Temps", "Spirit Box"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Raiju",
+        "evidence": ["DOTS Projector", "EMF Level 5", "Ghost Orbs"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "Thaye",
+        "evidence": ["DOTS Projector", "Ghost Writing", "Ghost Orbs"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "The Mimic",
+        "evidence": ["Fingerprints", "Freezing Temps", "Spirit Box"],
+        "strength": "",
+        "weakness": ""
+    },
+    {
+        "name": "The Twins",
+        "evidence": ["EMF Level 5", "Freezing Temps", "Spirit Box"],
+        "strength": "",
+        "weakness": ""
     }
+    
 ]
