@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Fit the page to the width of whatever screen opens it. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Tobin's Spirit Guide</title>
+    <meta name="description" content="Narrow down which ghost you are facing from the evidence you find.">
+
+    <!-- Lets the page be installed on a home screen like an app. -->
+    <link rel="manifest" href="web/manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="icon" href="web/icons/icon_192.png" type="image/png">
+    <link rel="apple-touch-icon" href="web/icons/apple_touch_icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Spirit Guide">
+
+    <link rel="stylesheet" href="web/style.css">
+
+    <!-- The rules load first, then the page code that uses them.
+         "defer" waits until the page is ready before running either one. -->
+    <script src="web/logic.js" defer></script>
+    <script src="web/app.js" defer></script>
+</head>
+<body>
+    <header class="page_header">
+        <h1>Tobin's Spirit Guide</h1>
+    </header>
+
+    <main class="layout">
+        <section class="panel evidence_panel" aria-labelledby="evidence_title">
+            <div class="panel_header">
+                <h2 id="evidence_title">Evidence</h2>
+                <button type="button" class="small_button" id="reset_button">Reset</button>
+            </div>
+            <!-- One row per evidence type is added here when the page loads. -->
+            <div id="evidence_list"></div>
+        </section>
+
+        <section class="panel ghost_panel" aria-labelledby="ghost_title">
+            <div class="panel_header">
+                <h2 id="ghost_title">Ghosts</h2>
+                <span class="hint">Tap a name for details</span>
+            </div>
+            <!-- One row per ghost is added here when the page loads. -->
+            <div id="ghost_list"></div>
+        </section>
+
+        <section class="timer_bar" aria-label="Timer">
+            <div class="timer_readout" id="timer_readout">0:00:00</div>
+            <div class="timer_buttons">
+                <button type="button" id="timer_two">2 Min</button>
+                <button type="button" id="timer_five">5 Min</button>
+                <button type="button" id="timer_stop">Stop</button>
+            </div>
+            <div class="awake_status" id="awake_status" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <p class="load_error" id="load_error" hidden></p>
+</body>
+</html>

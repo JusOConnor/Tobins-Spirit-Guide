@@ -1,0 +1,24 @@
+{
+    "name": "Tobin's Spirit Guide",
+    "short_name": "Spirit Guide",
+    "description": "Narrow down which ghost you are facing from the evidence you find.",
+    "start_url": "../index.html",
+    "scope": "../",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#121212",
+    "icons": [
+        {
+            "src": "icons/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

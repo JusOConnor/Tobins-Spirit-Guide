@@ -1,0 +1,381 @@
+/* Colors and layout for Tobin's Spirit Guide.
+
+   The page is designed for a phone first. The section near the bottom marked
+   "Wider screens" rearranges it into two columns for tablets, PCs, and
+   second monitors. */
+
+
+/* Colors used throughout the page, matching the desktop app. */
+:root {
+    color-scheme: dark;
+
+    --page_background: #121212;
+    --panel_background: #1e1e1e;
+    --panel_border: #2c2c2c;
+    --text: #f2f2f2;
+    --text_muted: #9a9a9a;
+    --text_dimmed: #4a4a4a;
+
+    --status_confirmed: #00c853;
+    --status_two_found: #ff9800;
+    --status_one_found: #ffd600;
+    --status_open: #e0e0e0;
+    --status_eliminated: #262626;
+
+    --choice_ruled_out: #c62828;
+    --choice_unknown: #565b5e;
+    --choice_found: #2e7d32;
+
+    --evidence_highlight: #00e676;
+    --timer_countdown: #00e5ff;
+    --timer_overtime: #ff5252;
+
+    --button_background: #2a2f33;
+    --button_pressed: #3a4045;
+
+    --timer_bar_height: 4.5rem;
+}
+
+
+/* Page basics */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--page_background);
+    color: var(--text);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.35;
+    /* Leave room so the timer bar never covers the last ghost. */
+    padding-bottom: calc(var(--timer_bar_height) + env(safe-area-inset-bottom) + 1rem);
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    /* Stops a double tap from zooming the page on phones. */
+    touch-action: manipulation;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--timer_countdown);
+    outline-offset: 2px;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.page_header {
+    padding: calc(env(safe-area-inset-top) + 0.9rem) 1rem 0.6rem;
+    text-align: center;
+}
+
+.page_header h1 {
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+}
+
+.layout {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0 0.75rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.panel {
+    background: var(--panel_background);
+    border: 1px solid var(--panel_border);
+    border-radius: 12px;
+    padding: 0.75rem;
+}
+
+.panel_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+}
+
+.panel_header h2 {
+    font-size: 1.05rem;
+}
+
+.hint {
+    color: var(--text_muted);
+    font-size: 0.8rem;
+}
+
+.small_button {
+    background: var(--button_background);
+    border-radius: 8px;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    min-height: 2.25rem;
+}
+
+.small_button:active {
+    background: var(--button_pressed);
+}
+
+
+/* Evidence rows */
+
+.evidence_row {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.15rem 0;
+}
+
+.evidence_name {
+    font-size: 0.9rem;
+}
+
+.choice_group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--button_background);
+    border-radius: 8px;
+    padding: 3px;
+    gap: 3px;
+}
+
+.choice_button {
+    background: transparent;
+    border-radius: 6px;
+    min-height: 2.5rem;
+    font-size: 0.8rem;
+    color: var(--text_muted);
+    padding: 0 0.2rem;
+}
+
+.choice_button.choice_ruled_out {
+    background: var(--choice_ruled_out);
+    color: #ffffff;
+}
+
+.choice_button.choice_unknown {
+    background: var(--choice_unknown);
+    color: #ffffff;
+}
+
+.choice_button.choice_found {
+    background: var(--choice_found);
+    color: #ffffff;
+}
+
+
+/* Ghost rows */
+
+.ghost_row {
+    display: grid;
+    grid-template-columns: 5.75rem repeat(3, 1fr);
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0;
+}
+
+.ghost_name {
+    min-height: 2.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #111111;
+    background: var(--status_open);
+}
+
+.evidence_chip {
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--text);
+}
+
+/* Each result colors the ghost's name button. */
+.status_confirmed .ghost_name {
+    background: var(--status_confirmed);
+}
+
+.status_two_found .ghost_name {
+    background: var(--status_two_found);
+}
+
+.status_one_found .ghost_name {
+    background: var(--status_one_found);
+}
+
+.status_open .ghost_name {
+    background: var(--status_open);
+}
+
+.status_eliminated .ghost_name {
+    background: var(--status_eliminated);
+    color: var(--text_dimmed);
+}
+
+.status_eliminated .evidence_chip {
+    color: var(--text_dimmed);
+}
+
+/* The last piece of evidence to look for when two are found. */
+.evidence_chip.is_needed {
+    color: var(--evidence_highlight);
+    font-weight: 700;
+}
+
+.ghost_row.is_open .ghost_name {
+    box-shadow: 0 0 0 2px var(--text);
+}
+
+.ghost_details {
+    margin: 0.15rem 0 0.5rem;
+    padding: 0.6rem 0.75rem;
+    background: #262626;
+    border-radius: 8px;
+    font-size: 0.88rem;
+}
+
+.ghost_details p + p {
+    margin-top: 0.35rem;
+}
+
+
+/* The timer, fixed to the bottom of the screen on phones */
+
+.timer_bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        'readout buttons'
+        'status status';
+    align-items: center;
+    gap: 0.2rem 0.75rem;
+    padding: 0.55rem 0.9rem calc(0.4rem + env(safe-area-inset-bottom));
+    background: var(--page_background);
+    border-top: 1px solid var(--panel_border);
+}
+
+.timer_readout {
+    grid-area: readout;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--timer_countdown);
+}
+
+.timer_readout.is_overtime {
+    color: var(--timer_overtime);
+}
+
+.timer_buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+}
+
+.timer_buttons button {
+    background: var(--button_background);
+    border-radius: 8px;
+    min-height: 2.6rem;
+    font-size: 0.9rem;
+}
+
+.timer_buttons button:active {
+    background: var(--button_pressed);
+}
+
+.awake_status {
+    grid-area: status;
+    font-size: 0.7rem;
+    color: var(--text_muted);
+    text-align: center;
+}
+
+.load_error {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #4a1c1c;
+    text-align: center;
+}
+
+
+/* Wider screens: evidence and timer on the left, ghosts on the right */
+
+@media (min-width: 820px) {
+    body {
+        padding-bottom: 1rem;
+    }
+
+    .layout {
+        grid-template-columns: 380px 1fr;
+        /* The first row fits the evidence and the second takes the rest,
+           so the timer sits right under the evidence. */
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            'evidence ghosts'
+            'timer ghosts';
+        align-items: start;
+        padding: 0 1rem;
+    }
+
+    .evidence_panel {
+        grid-area: evidence;
+    }
+
+    .ghost_panel {
+        grid-area: ghosts;
+    }
+
+    /* The timer becomes a regular panel under the evidence. */
+    .timer_bar {
+        grid-area: timer;
+        position: sticky;
+        top: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'readout'
+            'buttons'
+            'status';
+        justify-items: center;
+        gap: 0.6rem;
+        padding: 0.9rem;
+        background: var(--panel_background);
+        border: 1px solid var(--panel_border);
+        border-radius: 12px;
+    }
+
+    .timer_readout {
+        font-size: 2.2rem;
+    }
+
+    .timer_buttons {
+        width: 100%;
+    }
+
+    .ghost_row {
+        grid-template-columns: 7.5rem repeat(3, 1fr);
+    }
+
+    .ghost_name {
+        font-size: 0.95rem;
+    }
+
+    .evidence_chip {
+        font-size: 0.85rem;
+    }
+}

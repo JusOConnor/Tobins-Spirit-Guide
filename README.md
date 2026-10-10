@@ -43,7 +43,7 @@ A ghost is eliminated when you rule out evidence it always leaves, or find evide
 
 | File | What it holds |
 | --- | --- |
-| `Tobins_Spirit_Guide.py` | Opens the window. |
+| `start_guide.py` | Opens the window. |
 | `functions/ghost_data.json` | The ghost list. Edit this to add or change ghosts. |
 | `functions/data.py` | Loads the ghost list. |
 | `functions/logic.py` | The rules for matching evidence to ghosts. |
