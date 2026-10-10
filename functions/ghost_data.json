@@ -110,8 +110,8 @@
     {
         "name": "Deogen",
         "evidence": ["DOTS Projector", "Ghost Writing", "Spirit Box"],
-        "strength": "",
-        "weakness": ""
+        "strength": "Always knows where you are hiding",
+        "weakness": "Moves at a snail's pace once it gets close to you."
     },
     {
         "name": "Gallu",
@@ -122,8 +122,8 @@
     {
         "name": "Goryo",
         "evidence": ["EMF Level 5", "Fingerprints", "DOTS Projector"],
-        "strength": "",
-        "weakness": ""
+        "strength": "A Goryo will usually only show itself on camera if there are no people nearby.",
+        "weakness": "They are rarely seen far from their place of death."
     },
     {
         "name": "Kormos",
@@ -134,50 +134,49 @@
     {
         "name": "Moroi",
         "evidence": ["Spirit Box", "Ghost Writing", "Freezing Temps"],
-        "strength": "",
-        "weakness": ""
+        "strength": "Curses players (draining sanity faster via Spirit Box or parabolic mic) and moves faster as team sanity drops.",
+        "weakness": "Smudge sticks blind and disorient it for 50% longer."
     },
     {
         "name": "Obake",
         "evidence": ["Fingerprints", "Ghost Orbs", "EMF Level 5"],
-        "strength": "",
-        "weakness": ""
+        "strength": "When interacting with the environment, an Obake will rarely leave a trace.",
+        "weakness": "Sometimes this ghost will shapeshift, leaving behind unique evidence."
     },
     {
         "name": "Obambo",
         "evidence": ["Ghost Writing", "Fingerprints", "DOTS Projector"],
-        "strength": "",
-        "weakness": ""
+        "strength": "Extinguishing a flame can cause an Onryo to attack.",
+        "weakness": "When threatened, this ghost will be less likely to hunt."
     },
     {
         "name": "Onryo",
         "evidence": ["Ghost Orbs", "Freezing Temps", "Spirit Box"],
-        "strength": "",
-        "weakness": ""
+        "strength": "Extinguishing a flame can cause an Onryo to attack.",
+        "weakness": "When threatened, this ghost will be less likely to hunt."
     },
     {
         "name": "Raiju",
         "evidence": ["DOTS Projector", "EMF Level 5", "Ghost Orbs"],
-        "strength": "",
-        "weakness": ""
+        "strength": "A Raiju can siphon power from nearby electrical devices, making it move faster.",
+        "weakness": "Raiju are constantly disrupting electronic equipment when attacking, making it easier to track."
     },
     {
         "name": "Thaye",
         "evidence": ["DOTS Projector", "Ghost Writing", "Ghost Orbs"],
-        "strength": "",
-        "weakness": ""
+        "strength": "Starts the investigation fast, active, and dangerous.",
+        "weakness": "Ages over time as you stay near it, becoming progressively slower and less active."
     },
     {
         "name": "The Mimic",
         "evidence": ["Fingerprints", "Freezing Temps", "Spirit Box"],
-        "strength": "",
-        "weakness": ""
+        "strength": "Can copy the traits, speeds, and behaviors of any other ghost type.",
+        "weakness": "Always spawns with fake 'Ghost Orbs' floating around it as a secondary signature."
     },
     {
         "name": "The Twins",
         "evidence": ["EMF Level 5", "Freezing Temps", "Spirit Box"],
-        "strength": "",
-        "weakness": ""
-    }
-    
+        "strength": "One ghost starts the hunt.",
+        "weakness": "May throw objects at different locations at the same time."
+    } 
 ]
