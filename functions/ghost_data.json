@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Banshee",
+        "evidence": ["Fingerprints", "Ghost Orbs", "DOTS Projector"],
+        "strength": "Only targets one person at a time.",
+        "weakness": "Fears the Crucifix and is less aggressive near one."
+    },
+    {
+        "name": "Demon",
+        "evidence": ["Fingerprints", "Ghost Writing", "Freezing Temps"],
+        "strength": "Attacks more often than any other ghost.",
+        "weakness": "Asking a Demon successful Ouija board questions won't lower your sanity."
+    },
+    {
+        "name": "Goryo",
+        "evidence": ["EMF Level 5", "Fingerprints", "DOTS Projector"],
+        "strength": "A Goryo will usually only show itself on camera if there are no people nearby.",
+        "weakness": "Is rarely seen far from its place of death."
+    },
+    {
+        "name": "Hantu",
+        "evidence": ["Fingerprints", "Ghost Orbs", "Freezing Temps"],
+        "strength": "Lower temperatures can cause the Hantu to move at faster speeds.",
+        "weakness": "A Hantu will move slower in warm areas."
+    },
+    {
+        "name": "Jinn",
+        "evidence": ["EMF Level 5", "Fingerprints", "Freezing Temps"],
+        "strength": "Travels at a faster speed if a victim is far away.",
+        "weakness": "Turning off a power source will prevent the Jinn from using its ability."
+    },
+    {
+        "name": "Mare",
+        "evidence": ["Spirit Box", "Ghost Orbs", "Ghost Writing"],
+        "strength": "Increased chance to attack in the dark.",
+        "weakness": "Turning the lights on lowers its chance to attack."
+    },
+    {
+        "name": "Myling",
+        "evidence": ["EMF Level 5", "Fingerprints", "Ghost Writing"],
+        "strength": "Known to be quieter when hunting.",
+        "weakness": "Makes paranormal sounds more frequently."
+    },
+    {
+        "name": "Oni",
+        "evidence": ["EMF Level 5", "Freezing Temps", "DOTS Projector"],
+        "strength": "Can move objects and is more active with people nearby.",
+        "weakness": "Is easy to find and identify because it is very active."
+    },
+    {
+        "name": "Phantom",
+        "evidence": ["Spirit Box", "Fingerprints", "DOTS Projector"],
+        "strength": "Sanity drops considerably when looking at a Phantom.",
+        "weakness": "Taking a photo of a Phantom will make it temporarily disappear."
+    },
+    {
+        "name": "Poltergeist",
+        "evidence": ["Spirit Box", "Fingerprints", "Ghost Writing"],
+        "strength": "Throws a huge amount of objects at once.",
+        "weakness": "Ineffective in an empty room."
+    },
+    {
+        "name": "Revenant",
+        "evidence": ["Ghost Orbs", "Ghost Writing", "Freezing Temps"],
+        "strength": "Travels significantly faster when hunting a victim.",
+        "weakness": "Hiding from a Revenant causes it to move very slowly."
+    },
+    {
+        "name": "Shade",
+        "evidence": ["EMF Level 5", "Ghost Writing", "Freezing Temps"],
+        "strength": "Shy, making it difficult to locate.",
+        "weakness": "Will not enter hunting mode with multiple people nearby."
+    },
+    {
+        "name": "Spirit",
+        "evidence": ["EMF Level 5", "Spirit Box", "Ghost Writing"],
+        "strength": "Has no special strengths.",
+        "weakness": "Smudge Sticks will stop it from attacking for a long period of time."
+    },
+    {
+        "name": "Wraith",
+        "evidence": ["EMF Level 5", "Spirit Box", "DOTS Projector"],
+        "strength": "Can't be tracked by footsteps.",
+        "weakness": "Has a toxic reaction to salt."
+    },
+    {
+        "name": "Yokai",
+        "evidence": ["Spirit Box", "Ghost Orbs", "DOTS Projector"],
+        "strength": "Talking near a Yokai will anger it and increase its chance of attacking.",
+        "weakness": "When hunting, a Yokai can only hear voices close to it."
+    },
+    {
+        "name": "Yurei",
+        "evidence": ["Ghost Orbs", "Freezing Temps", "DOTS Projector"],
+        "strength": "Has a stronger effect on your sanity.",
+        "weakness": "Using Smudge Sticks in a Yurei's room will prevent it from wandering for a long time."
+    }
+]

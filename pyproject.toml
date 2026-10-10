@@ -1,10 +1,20 @@
 [project]
-name = "guy-in-a-chair"
+name = "spirit_guide"
 version = "0.1.0"
-description = "Add your description here"
+description = "Narrow down which ghost you are facing from the evidence you find."
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "ipykernel>=7.4.0",
-    "tcl>=0.2",
+authors = [
+    { name = "Jenny O'Connor" }
 ]
+requires-python = ">=3.13"
+dependencies = [
+    "customtkinter>=6.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
+
+[tool.uv]
+package = false
