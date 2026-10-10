@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+.venv
+
+# Editor
+.vscode/
+.idea/
+
+# Virtual environments
+.venv
+
+# User added
+Dev*.*
+Output/
+Notes for ChatGPT.txt
+Archive/
+Build/
+*.exe
+.vs/
