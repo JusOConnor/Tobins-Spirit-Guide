@@ -49,3 +49,7 @@ A ghost is eliminated when you rule out evidence it always leaves, or find evide
 | `functions/logic.py` | The rules for matching evidence to ghosts. |
 | `functions/desktop_app.py` | The customtkinter window. |
 | `spirit_guide.ipynb` | Test the rules and open the window. |
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/JusOConnor) \
+[If you like my work or if you found this at all helpful please feel free to contribute.](buymeacoffee.com/JusOConnor) \
+buymeacoffee.com/JusOConnor
