@@ -1,5 +1,14 @@
 # Tobin's Spirit Guide
+This is originally started out as a companion app for Phasmophobia during the early versions of the game.  The is meant to help you rule out Ghost types as you collect or rule out eveidence.  As you get closer to solving the puzzle it help identify which tools to use next.  The timer is meant for lower difficulty levels where you get a short window of time before the Ghost can start hunting.
 
+Works great with VR to add to the immersion. 
+
+Web Version:  
+https://jusoconnor.github.io/Tobins-Spirit-Guide/
+
+*The game now includes some of this functionality so this is mostly a passion project, but still very usable*
+
+___
 Mark each piece of evidence as Ruled Out, Unknown, or Found, and the guide shows which ghosts are still possible.
 
 ## Setup
